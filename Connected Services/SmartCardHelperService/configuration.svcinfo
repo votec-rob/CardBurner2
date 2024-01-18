@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.NetNamedPipeBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;NetNamedPipeBinding_ISmartCardHelper&quot;&gt;&lt;security mode=&quot;None&quot; /&gt;&lt;/Data&gt;" bindingType="netNamedPipeBinding" name="NetNamedPipeBinding_ISmartCardHelper" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;net.pipe://localhost/DVS.SmartCardHelperService.Api/service&quot; binding=&quot;netNamedPipeBinding&quot; bindingConfiguration=&quot;NetNamedPipeBinding_ISmartCardHelper&quot; contract=&quot;SmartCardHelperService.ISmartCardHelper&quot; name=&quot;NetNamedPipeBinding_ISmartCardHelper&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;net.pipe://localhost/DVS.SmartCardHelperService.Api/service&quot; binding=&quot;netNamedPipeBinding&quot; bindingConfiguration=&quot;NetNamedPipeBinding_ISmartCardHelper&quot; contract=&quot;SmartCardHelperService.ISmartCardHelper&quot; name=&quot;NetNamedPipeBinding_ISmartCardHelper&quot; /&gt;" contractName="SmartCardHelperService.ISmartCardHelper" name="NetNamedPipeBinding_ISmartCardHelper" />
+  </endpoints>
+</configurationSnapshot>

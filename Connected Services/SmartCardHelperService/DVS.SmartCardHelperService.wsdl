@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://DVS.SmartCardHelperService" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://DVS.SmartCardHelperService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://DVS.SmartCardHelperService/Imports">
+      <xsd:import namespace="http://DVS.SmartCardHelperService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/DVS.Utilities.SecureLogin" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISmartCardHelper_CardPresent_InputMessage">
+    <wsdl:part name="parameters" element="tns:CardPresent" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_CardPresent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CardPresentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_CardReadersList_InputMessage">
+    <wsdl:part name="parameters" element="tns:CardReadersList" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_CardReadersList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CardReadersListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ChangeSecurityPin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeSecurityPin" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ChangeSecurityPin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeSecurityPinResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ChangeUserPin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeUserPin" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ChangeUserPin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeUserPinResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_CheckCardType_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckCardType" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_CheckCardType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckCardTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ReadVoterFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadVoterFile" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ReadVoterFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadVoterFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ClearSmartCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearSmartCard" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ClearSmartCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearSmartCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_WriteVoterFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteVoterFile" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_WriteVoterFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteVoterFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ReadAdminFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadAdminFile" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_ReadAdminFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadAdminFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_WriteAdminFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteAdminFile" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_WriteAdminFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteAdminFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_SelectCardReader_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCardReader" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_SelectCardReader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCardReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_VerifySecurityPin_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifySecurityPin" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_VerifySecurityPin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifySecurityPinResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_VerifyUserPin_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyUserPin" />
+  </wsdl:message>
+  <wsdl:message name="ISmartCardHelper_VerifyUserPin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyUserPinResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISmartCardHelper">
+    <wsdl:operation name="CardPresent">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/CardPresent" message="tns:ISmartCardHelper_CardPresent_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/CardPresentResponse" message="tns:ISmartCardHelper_CardPresent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CardReadersList">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/CardReadersList" message="tns:ISmartCardHelper_CardReadersList_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/CardReadersListResponse" message="tns:ISmartCardHelper_CardReadersList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSecurityPin">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ChangeSecurityPin" message="tns:ISmartCardHelper_ChangeSecurityPin_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ChangeSecurityPinResponse" message="tns:ISmartCardHelper_ChangeSecurityPin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeUserPin">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ChangeUserPin" message="tns:ISmartCardHelper_ChangeUserPin_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ChangeUserPinResponse" message="tns:ISmartCardHelper_ChangeUserPin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCardType">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/CheckCardType" message="tns:ISmartCardHelper_CheckCardType_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/CheckCardTypeResponse" message="tns:ISmartCardHelper_CheckCardType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadVoterFile">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ReadVoterFile" message="tns:ISmartCardHelper_ReadVoterFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ReadVoterFileResponse" message="tns:ISmartCardHelper_ReadVoterFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearSmartCard">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ClearSmartCard" message="tns:ISmartCardHelper_ClearSmartCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ClearSmartCardResponse" message="tns:ISmartCardHelper_ClearSmartCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteVoterFile">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/WriteVoterFile" message="tns:ISmartCardHelper_WriteVoterFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/WriteVoterFileResponse" message="tns:ISmartCardHelper_WriteVoterFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAdminFile">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ReadAdminFile" message="tns:ISmartCardHelper_ReadAdminFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/ReadAdminFileResponse" message="tns:ISmartCardHelper_ReadAdminFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteAdminFile">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/WriteAdminFile" message="tns:ISmartCardHelper_WriteAdminFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/WriteAdminFileResponse" message="tns:ISmartCardHelper_WriteAdminFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCardReader">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/SelectCardReader" message="tns:ISmartCardHelper_SelectCardReader_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/SelectCardReaderResponse" message="tns:ISmartCardHelper_SelectCardReader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifySecurityPin">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/VerifySecurityPin" message="tns:ISmartCardHelper_VerifySecurityPin_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/VerifySecurityPinResponse" message="tns:ISmartCardHelper_VerifySecurityPin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUserPin">
+      <wsdl:input wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/VerifyUserPin" message="tns:ISmartCardHelper_VerifyUserPin_InputMessage" />
+      <wsdl:output wsaw:Action="http://DVS.SmartCardHelperService/ISmartCardHelper/VerifyUserPinResponse" message="tns:ISmartCardHelper_VerifyUserPin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

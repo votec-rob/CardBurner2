@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="93243ba8-cf48-440f-beab-0f1e183b1333" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.pipe://localhost/DVS.SmartCardHelperService.Api/service/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DVS.SmartCardHelperService.wsdl" MetadataType="Wsdl" ID="2e6418f8-429c-491b-996c-770f1f7749c9" SourceId="1" SourceUrl="net.pipe://localhost/DVS.SmartCardHelperService.Api/service/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="dd75c7b4-eda3-41f5-abbc-7e5274152d67" SourceId="1" SourceUrl="net.pipe://localhost/DVS.SmartCardHelperService.Api/service/mex" />
+    <MetadataFile FileName="DVS.SmartCardHelperService.xsd" MetadataType="Schema" ID="93b02fb8-ac11-48f6-bf2d-3f4fec08b836" SourceId="1" SourceUrl="net.pipe://localhost/DVS.SmartCardHelperService.Api/service/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b43245e0-0602-43fe-8e3c-d65b88395f56" SourceId="1" SourceUrl="net.pipe://localhost/DVS.SmartCardHelperService.Api/service/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="7c43f75a-8812-4bac-9494-8434460f5b22" SourceId="1" SourceUrl="net.pipe://localhost/DVS.SmartCardHelperService.Api/service/mex" />
+    <MetadataFile FileName="DVS.Utilities.SecureLogin.xsd" MetadataType="Schema" ID="8941b75b-a97c-44e8-a777-f8c2268ed412" SourceId="1" SourceUrl="net.pipe://localhost/DVS.SmartCardHelperService.Api/service/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
